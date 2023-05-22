@@ -1,0 +1,51 @@
+.examples_section{
+    @include set-pos-and-width;
+    @include sections-gap;
+    h2{
+        margin-bottom: 30px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 15px;
+        @media screen and (max-width:$lapTopBreakPoint){
+            justify-content: space-between;
+        }
+        li{
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+            @media screen and (max-width:$lapTopBreakPoint){
+                width: 75px;
+                height: 75px;
+            }
+            @media screen and (max-width:$tabletTopBreakPoint){
+                width: 100px;
+                height: 100px;
+            }
+            @media screen and (max-width:$phoneTopBreakPoint){
+                width: 135px;
+                height: 135px;
+            }
+            overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            img{
+                min-width: 120%;
+                // min-
+                height: 100%;
+            }
+
+            div{
+                width: 80%;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+
+            }
+        }
+    }
+}

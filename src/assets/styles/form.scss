@@ -1,0 +1,126 @@
+.form-component{
+    
+    width: 100%;
+    .form-component_title{
+        font-weight: bold;
+        font-size: 25px;
+        color: $dark-blue;
+        text-align: center;
+        margin-bottom: 5px;
+
+    }   
+    .form-component_subtitle{
+        font-weight: 300;
+        font-size: 16px;
+        color: $dark-blue;
+        text-align: center;
+        margin-bottom: 40px;
+
+    }   
+
+    .form_item-wrap{
+        margin-bottom: 40px;
+    }
+
+    .form_item{
+        position: relative;
+        margin-bottom: 30px;
+        .form_input{
+            width: 100%;
+            height: 60px;
+            border: 1px solid #979797;
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            .form_item_img{
+                width: 36px;
+                img,svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            input{
+                flex: 1;
+                margin-left: 27px;
+                outline: none;
+                border: none;
+                background: none;
+                @include setFont;
+                // color: #979797;
+    
+            }
+        }
+        .form_item-danger{
+            margin-top: 7px;
+            font-size: 14px;
+            position: absolute;
+            color: red;
+            transition-duration: 0.3s;
+        }
+
+        // .form_item-danger.active{
+
+        //     opacity: 1;
+  
+        // }
+    } 
+
+    .form_item:last-child{
+        // margin-bottom: 0px;
+    }
+    button{
+        width: 100%;
+        border: none;
+        height: 59px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: $dark-blue;
+        color: white;
+        transition-duration: 0.3s;
+        .loader {
+            border: 4px solid white;
+            border-left-color: transparent;
+            border-radius: 50%;
+          }
+          
+          .loader {
+            border: 4px solid white;
+            border-left-color: transparent;
+            width: 30px;
+            height: 30px;
+          }
+          
+          .loader {
+            border: 4px solid white;
+            border-left-color: transparent;
+            width: 30px;
+            height: 30px;
+            animation: spin89345 1s linear infinite;
+          }
+          
+          @keyframes spin89345 {
+            0% {
+              transform: rotate(0deg);
+            }
+          
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+    }
+    .button_blocked{
+        cursor: not-allowed;
+    }
+    .form_sended{
+        background-color: rgb(0, 160, 0);
+    }
+    .form_error{
+        background-color: red;
+    }
+    button:hover{
+        background: $yellow;
+        color: black;
+    }
+}

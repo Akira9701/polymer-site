@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$dark-blue:#111B47;
+$yellow: #FFD166;
+$br:4px;
+
+
+$lapTopBreakPoint: 1250px;
+$tabletTopBreakPoint: 840px;
+$phoneTopBreakPoint: 650px;
+
+
+
+main{
+    position: relative;
+}
+
+@mixin setFont{
+    font-family: 'Montserrat';
+
+}
+
+body{
+    // background: red;
+    font-family: 'Montserrat';
+}
+
+// section{
+//     animation: toggle 10s ease;
+
+// }
+
+// @keyframes toggle{
+//     from {
+//       opacity: 0;
+//     }
+  
+//     to {
+//         opacity: 1;
+//     }
+//   }
+
+
+
+$container-width: 1110px;
+
+@mixin set-pos-and-width{
+    max-width: $container-width;
+    @media screen and (max-width:1250px) {
+        max-width:  $tabletTopBreakPoint;
+        padding-left:40px;
+        padding-right:40px;
+    }
+    @media screen and (max-width:840px) {
+        // max-width:  $phoneTopBreakPoint;
+        overflow: hidden;
+        padding-left:40px;
+        padding-right:40px;
+    }
+    // padding-left:165px;
+    // padding-right:165px;
+    margin: 0 auto;
+
+}
+
+
+@mixin sections-gap{
+    padding-bottom: 120px;
+    padding-top: 120px;
+
+}
+

@@ -1,0 +1,41 @@
+.table-price_container{
+    width: 100%;
+    @media screen and (min-width:$phoneTopBreakPoint) {
+        font-size: 14px;
+        overflow-x: scroll; 
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    @media screen and (max-width:$phoneTopBreakPoint) {
+
+        // display: 12px;
+    }
+    tr{
+        vertical-align: middle;
+
+    }
+    tr:first-child{
+        background: $dark-blue;
+        color: white;
+        td:first-child{
+            width: 50%;
+            // display: flex;
+            // align-items: center;
+        }
+    }
+    td{
+        text-align: center;
+        padding: 10px;
+        border-bottom: solid 1px black;
+    }
+    .price-text-zaglav{
+        width: 40%;
+    }
+    .price-text-left{
+        text-align: left;
+    }
+
+}

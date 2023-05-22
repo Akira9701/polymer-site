@@ -1,0 +1,94 @@
+footer{
+    width: 100%;
+    background: $dark-blue;
+    padding-top: 72px;
+
+    .footer_container{
+        @include set-pos-and-width;
+        .footer_top-container{
+            margin-bottom: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+
+            .footer_top-container_logo{
+                margin-bottom: 10px;
+                width: 300px;
+                @media screen and (max-width:$phoneTopBreakPoint) {
+                    width: 40%;
+                }
+
+                font-size: 26px;
+                font-weight: 600;
+          
+            }
+            ul{
+                width: 300px;
+                @media screen and (max-width:$phoneTopBreakPoint) {
+                    width: 55%;
+                    font-size: 14px;
+                }
+                li{
+                    // width: fit-content;
+                    text-align: right;
+                    margin-bottom: 10px;
+                }
+                li:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        hr{
+            padding: 0;
+            margin: 0;
+        }
+        .footer_bottom-container{
+            button:hover{
+                background: rgb(230, 230, 230);
+                color: $dark-blue;
+                border-color: rgb(230, 230, 230);
+            }
+            // background: red;
+            padding-top: 20px;
+            padding-bottom: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .footer_bottom-container_description{
+                font-size: 14px;
+                color: white;
+            }  
+            .footer_bottom-container_links{
+  
+                @media screen and (max-width:$phoneTopBreakPoint) {
+                    flex-direction: column;
+                }
+
+                display: flex;
+                li{
+                    @media screen and (max-width:$phoneTopBreakPoint) {
+                        margin-bottom: 10px;
+                    }
+                    margin-right: 60px;
+                    @media screen and (max-width:$tabletTopBreakPoint) {
+                        margin-right: 20px;
+                    }
+                    a{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                li:last-child{
+                    margin-right: 0px;
+                    @media screen and (max-width:$phoneTopBreakPoint) {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

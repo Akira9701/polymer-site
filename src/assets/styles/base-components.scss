@@ -1,0 +1,80 @@
+h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $dark-blue;
+    @media screen and (max-width:1250px) {
+        font-size: 32px;  
+    }
+}
+
+button{
+    padding: 7px 13px;
+    border-radius: $br;
+    border: solid 2px;
+    // border: 0.1px;
+    background: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-style: normal;
+    font-weight: 500;
+    @include setFont;
+
+}
+
+
+.base-dark-button{
+    background: $dark-blue;
+    color: white;
+    border-color: $dark-blue;
+}
+
+.base-dark-button:hover{
+    background:  $yellow;
+    border-color: $yellow ;
+    color: $dark-blue;
+}
+
+
+.base-white-button{
+    background:  none;
+    border-color: $dark-blue ;
+    color: $dark-blue;
+}
+
+.base-white-button:hover{
+    background: $dark-blue;
+    color: white;
+    border-color: $dark-blue;
+}
+
+.base-yellow-button{
+    background:  $yellow;
+    border-color: $yellow ;
+    color: $dark-blue;
+}
+
+.base-yellow-button:hover{
+    background: $dark-blue;
+    color: white;
+    border-color: $dark-blue;
+}
+
+.base-section-with-text{
+    width: 100%;
+    color: $dark-blue;
+    height: fit-content;
+    p{
+        
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        @media screen and (max-width:1250px) {
+            font-size: 14px;  
+        }
+        @media screen and (max-width:$tabletTopBreakPoint) {
+            font-size: 18px;  
+        }
+    }
+}

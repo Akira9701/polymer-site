@@ -1,0 +1,14 @@
+.price_section{
+    @include set-pos-and-width;
+    @include sections-gap;
+    // padding-top: 60px;
+    padding-bottom: 0px;
+    // overflow: hidden;
+    h2{
+        margin-bottom: 30px;
+    }
+    >p{
+        text-align: center;
+        margin: 20px 0px;
+    }
+}
