@@ -27,7 +27,11 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    
+    "@typescript-eslint/no-misused-promises": [2, {
+      "checksVoidReturn": {
+        "attributes": false
+      }
+    }],
     'click-events-have-key-events': 0,
     'prefer-regex-literals': 0,
     'no-useless-escape': 0,

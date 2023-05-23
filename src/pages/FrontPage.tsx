@@ -1,4 +1,5 @@
 import React from 'react';
+import type { SetStateAction, Dispatch } from 'react';
 import { useOutletContext } from 'react-router-dom';
 
 import Advantages from '../components/Advantages';
@@ -7,7 +8,7 @@ import FrontBanner from '../components/FrontBanner';
 import Works from '../components/Works';
 
 const FrontPage = () => {
-  const [modal, setModal] = useOutletContext<boolean>();
+  const [, setModal] = useOutletContext<Dispatch<SetStateAction<boolean>>[]>();
 
   return (
     <>

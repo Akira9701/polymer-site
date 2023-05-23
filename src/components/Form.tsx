@@ -16,6 +16,7 @@ const Form = ({ FormData }: { FormData: IFormData[] }) => {
   } = useForm<IFormInterface>();
 
   const onSubmit: SubmitHandler<IFormInterface> = async (data) => {
+    console.log(4444);
     try {
       setFormState({ sended: true, status: '' });
       const response = await fetch('https://xn--80afycfgbb0bt.xn--p1ai/polymer/', {
@@ -25,7 +26,6 @@ const Form = ({ FormData }: { FormData: IFormData[] }) => {
         },
         method: 'POST',
       });
-      const json = await response.json();
       setFormState({ sended: false, status: 'ok' });
       setTimeout(() => {
         setFormState({ sended: false, status: '' });
