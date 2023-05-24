@@ -2,7 +2,14 @@
 
 header{
     @include set-pos-and-width;
+    margin-bottom: 260px;
 
+    @media screen and (max-width:$lapTopBreakPoint) {
+        margin-bottom: 190px;
+    }
+    @media screen and (max-width:$tabletTopBreakPoint) {
+        margin-bottom: 120px;
+    }
     
     .header_desktop{
         @media screen and (max-width:$phoneTopBreakPoint) {

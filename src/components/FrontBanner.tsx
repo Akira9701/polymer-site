@@ -1,6 +1,8 @@
 import React from 'react';
 import type { SetStateAction, Dispatch } from 'react';
 
+import texture from '../assets/images/figure-bg.jpg';
+
 const FrontBanner = ({ setModal }: { setModal: Dispatch<SetStateAction<boolean>> }) => {
   console.log(1);
   return (

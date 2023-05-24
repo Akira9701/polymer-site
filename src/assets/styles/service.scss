@@ -4,7 +4,7 @@ $yellow: #FFD166;
 $br:4px;
 
 
-$lapTopBreakPoint: 1250px;
+$lapTopBreakPoint: 1540px;
 $tabletTopBreakPoint: 840px;
 $phoneTopBreakPoint: 650px;
 
@@ -64,8 +64,14 @@ $container-width: 1110px;
 
 
 @mixin sections-gap{
-    padding-bottom: 120px;
-    padding-top: 120px;
+    margin-bottom: 360px;
+    
+    @media screen and (max-width:$lapTopBreakPoint) {
+        margin-bottom: 260px;
+    }
+    @media screen and (max-width:$tabletTopBreakPoint) {
+        margin-bottom: 120px;
+    }
 
 }
 

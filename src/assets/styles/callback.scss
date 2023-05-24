@@ -8,7 +8,13 @@
     // display: flex;
     @include set-pos-and-width;
     @include sections-gap;
-
+    margin-bottom: 120px;
+    @media screen and (max-width:$lapTopBreakPoint) {
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width:$tabletTopBreakPoint) {
+        margin-bottom: 120px;
+    }
     display: flex;
     justify-content: space-between;
     width: 100%;

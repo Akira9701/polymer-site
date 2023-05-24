@@ -1,12 +1,10 @@
 .front-banner_section{
-    padding-top: 240px;
-    padding-bottom: 240px;
-    @media screen and (max-width:$tabletTopBreakPoint) {
-      padding-top: 160px;
-      padding-bottom: 160px;
-    }
+
+
     // height: 600px;
     @include set-pos-and-width;
+    @include sections-gap;
+
     display: flex;
     justify-content: space-between;
     @media screen and (max-width:$tabletTopBreakPoint) {
@@ -31,10 +29,21 @@
         font-size: 50px;
         font-weight: 600;
         margin-bottom: 10px;
-        @media screen and (max-width:1250px) {
+        @media screen and (max-width:$lapTopBreakPoint) {
           font-size: 34px;
 
-      }
+        }
+        @media screen and (max-width:$tabletTopBreakPoint) {
+          font-size: 50px;
+
+        }
+
+        @media screen and (max-width:$phoneTopBreakPoint) {
+          font-size: 42px;
+          word-wrap: break-word; /* Перенос слов */ 
+
+
+        }
     }
     p{
         
@@ -85,11 +94,11 @@
       
       .back {
         transform: translateZ(-0.3em);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
         }
       .front {
         transform: translateZ(0.3em);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
 
         }
       .top {
@@ -97,16 +106,16 @@
           transform: translateY(344px) rotateX(90deg);
         }
         transform: translateY(394px) rotateX(90deg);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
         }
       .bottom {
         transform: translateY(-6px) rotateX(90deg);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
         }
       .left {
         
         transform: translateX(-6px) rotateY(90deg);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
         }
       
       .right {
@@ -114,7 +123,7 @@
           transform: translateX(244px) rotateY(90deg);
         }
         transform: translateX(294px) rotateY(90deg);
-        background: url(../../../public/figure-bg.jpg);
+        background: url('/figure-bg.jpg');
         }
       
       @keyframes rotate {
